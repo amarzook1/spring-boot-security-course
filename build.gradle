@@ -25,10 +25,16 @@ dependencies {
 	implementation 'com.google.guava:guava:30.0-jre'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.4.1'
 	compileOnly 'org.projectlombok:lombok'
+	compile 'org.springframework.ldap:spring-ldap-core'
+	compile 'org.springframework.security:spring-security-ldap'
+	compile 'com.unboundid:unboundid-ldapsdk'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile 'io.jsonwebtoken:jjwt-api:0.11.2'
+	runtime 'io.jsonwebtoken:jjwt-impl:0.11.2'
+	runtime 'io.jsonwebtoken:jjwt-jackson:0.11.2'
 }
 
 test {
